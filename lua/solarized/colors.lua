@@ -12,7 +12,7 @@ local bases = {
 local solarized = {
 
 	white =         '#eee8d5',
-	gray =          '#073642',
+	gray =          bases['base1'],
 	black =         '#002b36',
 	red =           '#dc322f',
 	green =         '#859900',
@@ -38,9 +38,9 @@ local solarized = {
 	contrast =      '#002b36',
 	active =        '#d8ccc4',
 	border =        '#002b36',
-	line_numbers =  '#839496',
-	highlight =     '#d8ccc4',
-	disabled =      '#073642',
+	line_numbers =  '#586e75',
+	highlight =     '#b58900',
+	disabled =      bases['base01'],
 	cursor =        '#268bd2',
 	accent =        '#073642',
 
@@ -54,8 +54,8 @@ local solarized = {
 if vim.o.background == 'dark' then
 	solarized.bg = solarized.bg_dark
 	solarized.bg_alt = solarized.bg_dark_alt
-	solarized.fg = solarized.fg_dark
-	solarized.text = solarized.text_dark
+	solarized.fg = solarized.fg_light
+	solarized.text = solarized.text_light
 else
 	solarized.bg = solarized.bg_light
 	solarized.bg_alt = solarized.bg_light_alt

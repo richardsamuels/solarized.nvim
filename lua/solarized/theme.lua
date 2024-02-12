@@ -93,7 +93,7 @@ theme.loadEditor = function ()
 
 	local editor = {
 		NormalFloat =			{ fg = solarized.fg, bg = solarized.float }, -- normal text and background color
-		ColorColumn =			{ fg = solarized.none, bg = solarized.active }, --  used for the columns set with 'colorcolumn'
+		ColorColumn =			{ fg = solarized.none, bg = solarized.bg_alt}, --  used for the columns set with 'colorcolumn'
 		Conceal =				{ fg = solarized.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 		Cursor =				{ fg = solarized.cursor, bg = solarized.none, style = 'reverse' }, -- the character under the cursor
 		CursorIM =				{ fg = solarized.cursor, bg = solarized.none, style = 'reverse' }, -- like Cursor, but used when in IME mode
@@ -106,9 +106,9 @@ theme.loadEditor = function ()
 		ErrorMsg =				{ fg = solarized.none },
 		Folded =				{ fg = solarized.disabled, bg = solarized.none, style = 'italic' },
 		FoldColumn =			{ fg = solarized.blue },
-		IncSearch =				{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
+		IncSearch =				{ fg = solarized.bg_dark_alt, bg = solarized.orange, style = 'standout' },
 		LineNr =				{ fg = solarized.line_numbers, bg = solarized.bg_alt },
-		CursorLineNr =			{ fg = solarized.accent },
+		CursorLineNr =			{ fg = "#839496" },
 		MatchParen =			{ fg = solarized.purple, bg = solarized.none, style = 'bold' },
 		ModeMsg =				{ fg = solarized.accent },
 		MoreMsg =				{ fg = solarized.accent },
@@ -118,9 +118,9 @@ theme.loadEditor = function ()
 		PmenuSbar =				{ fg = solarized.text, bg = solarized.contrast },
 		PmenuThumb =			{ fg = solarized.fg, bg = solarized.accent },
 		Question =				{ fg = solarized.green },
-		QuickFixLine =			{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
+		QuickFixLine =			{ fg = solarized.highlight, bg = solarized.orange, style = 'reverse' },
 		qfLineNr =				{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
-		Search =				{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
+		Search =				{ fg = solarized.highlight, bg = solarized.none, style = 'reverse' },
 		SpecialKey =			{ fg = solarized.yellow },
 		SpellBad =				{ fg = solarized.red, bg = solarized.none, style = 'italic,undercurl' },
 		SpellCap =				{ fg = solarized.blue, bg = solarized.none, style = 'italic,undercurl' },
